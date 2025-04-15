@@ -54,8 +54,13 @@ def main():
     
     #for loop to ask player 1 and player 2 questions
     for i in range(5):
+        #select a random question and remove it from the list
         p1_question = random.choice(question_list)
+        question_list.remove(p1_question)
+        #select a random question and remove it from the list
         p2_question = random.choice(question_list)
+        question_list.remove(p2_question)
+        
         
         #player 1 questions
         p1_ans = int(input(
